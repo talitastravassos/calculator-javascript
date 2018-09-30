@@ -42,6 +42,25 @@ header {
     font-size: 48px;
     font-weight: 600;
 }
+#data {
+    color: #000;
+    text-align: left;
+    position: absolute;
+    bottom: 170px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#hora {
+    color: #000;
+    text-align: left;
+    position: absolute;
+    bottom: 145px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+}
 .btn-number {
     background-color: #EFEFEF;
     font-size: 24px;
