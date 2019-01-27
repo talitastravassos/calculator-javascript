@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="author" content="Hcode Treinamentos">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Calculadora</title>
+    <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <LINK href="global.css" rel="stylesheet" type="text/css">
+    <link href="global.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
 </head>
-<body>
-    
-    <div class="center">
-        <div id="calculadora">
-            <header>
-                <div id="data"></div>
-                <div id="hora"></div>
 
-                <div id="display"></div>
+<body>
+
+    <div class="center">
+        <div id="calculator">
+            <header>
+                <div id="display">
+                    <div id="result">
+                        <div id="history">
+                            <p id="history-value"></p>
+                        </div>
+                        <div id="output">
+                            <p id="output-value"></p>
+                        </div>
+                    </div>
             </header>
             <section class="container">
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm">%</button>
-                    <button type="button" class="btn btn-others col-sm">√</button>
-                    <button type="button" class="btn btn-others col-sm">x²</button>
-                    <button type="button" class="btn btn-others col-sm">¹/x</button>
+                    <button type="button" class="btn btn-operator col-sm" id="backspace">CE</button>
+                    <button type="button" class="btn btn-operator col-sm" id="clear">C</button>
+                    <button type="button" class="btn btn-operator col-sm" id="">←</button>
+                    <button type="button" class="btn btn-operator col-sm" id="/">÷</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm">CE</button>
-                    <button type="button" class="btn btn-others col-sm">C</button>
-                    <button type="button" class="btn btn-others col-sm">←</button>
-                    <button type="button" class="btn btn-others col-sm">÷</button>
+                    <button type="button" class="btn btn-number col-sm" id="7">7</button>
+                    <button type="button" class="btn btn-number col-sm" id="8">8</button>
+                    <button type="button" class="btn btn-number col-sm" id="9">9</button>
+                    <button type="button" class="btn btn-operator col-sm" id="*">X</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm">7</button>
-                    <button type="button" class="btn btn-number col-sm">8</button>
-                    <button type="button" class="btn btn-number col-sm">9</button>
-                    <button type="button" class="btn btn-others col-sm">X</button>
+                    <button type="button" class="btn btn-number col-sm" id="4">4</button>
+                    <button type="button" class="btn btn-number col-sm" id="5">5</button>
+                    <button type="button" class="btn btn-number col-sm" id="6">6</button>
+                    <button type="button" class="btn btn-operator col-sm" id="-">-</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm">4</button>
-                    <button type="button" class="btn btn-number col-sm">5</button>
-                    <button type="button" class="btn btn-number col-sm">6</button>
-                    <button type="button" class="btn btn-others col-sm">-</button>
+                    <button type="button" class="btn btn-number col-sm" id="1">1</button>
+                    <button type="button" class="btn btn-number col-sm" id="2">2</button>
+                    <button type="button" class="btn btn-number col-sm" id="3">3</button>
+                    <button type="button" class="btn btn-operator col-sm" id="+">+</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm">1</button>
-                    <button type="button" class="btn btn-number col-sm">2</button>
-                    <button type="button" class="btn btn-number col-sm">3</button>
-                    <button type="button" class="btn btn-others col-sm">+</button>
-                </div>
-                <div class="row">
-                    <button type="button" class="btn btn-others col-sm">±</button>
-                    <button type="button" class="btn btn-number col-sm">0</button>
-                    <button type="button" class="btn btn-others col-sm">,</button>
-                    <button type="button" class="btn btn-others col-sm">=</button>
+                    <button type="button" class="btn btn-empty col-sm" id=""></button>
+                    <button type="button" class="btn btn-number col-sm" id="0">0</button>
+                    <button type="button" class="btn btn-empty col-sm" id="virgula"></button>
+                    <button type="button" class="btn btn-operator col-sm" id="=">=</button>
                 </div>
             </section>
         </div>
     </div>
-    <script src="scripts/controller/CalcController.js"></script>
-    <script src="scripts/calculator.js"></script>
+    <script src="calculator.js"></script>
 </body>
+
 </html>

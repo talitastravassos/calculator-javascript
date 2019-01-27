@@ -8,24 +8,24 @@ body {
     transform: translateX(-50%) translateY(-50%);
     
 }
-#calculadora {
+#calculator {
     background-color: #B1B1B1;
     width: 322px;
     height: 500px;
     padding: 6px;
 }
-#calculadora .btn {
+#calculator .btn {
     margin: 2px;
     border-radius: 0;
     min-height: 44px;
     outline: none;
     box-shadow: none;
 }
-#calculadora .btn:hover {
+#calculator .btn:hover {
     background-color: #BCBCBC;
 }
-#calculadora .btn:active {
-    background-color: #909090;
+#calculator .btn:active {
+    background-color: #ddd6d6;
 }
 header {
     height: 205px;
@@ -42,25 +42,6 @@ header {
     font-size: 48px;
     font-weight: 600;
 }
-#data {
-    color: #000;
-    text-align: left;
-    position: absolute;
-    bottom: 170px;
-    width: 100%;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-#hora {
-    color: #000;
-    text-align: left;
-    position: absolute;
-    bottom: 145px;
-    width: 100%;
-    font-size: 18px;
-    font-weight: 600;
-}
 .btn-number {
     background-color: #EFEFEF;
     font-size: 24px;
@@ -68,9 +49,30 @@ header {
     padding-bottom: 0;
     font-weight: 600;
 }
-.btn-others {
+.btn-operator {
     background-color: #D1D1D1;
     padding-top: 0;
     padding-bottom: 0;
     font-size: 20px;
+}
+
+.btn-empty{
+	background-color: #eaedef;
+}
+
+#result{
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	font-size: 25px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 45px;
 }
